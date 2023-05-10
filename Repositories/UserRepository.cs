@@ -15,7 +15,7 @@ namespace CRM.Repositories
 {
     class UserRepository : IUserRepository, IDisposable
     {
-        private string _connectionString = "User ID=postgres;Password=k1t2i3f4;Host=localhost;Port=5432;Database=CRM;";
+        private string _connectionString = "User ID=*;Password=*;Host=localhost;Port=5432;Database=CRM;";
         public IDbConnection _dbConnection;
         private bool disposed = false;
 
